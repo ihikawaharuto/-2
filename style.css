@@ -1,0 +1,54 @@
+/* 全体設定 */
+html, body, .stApp {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: black !important;
+    text-align: center;
+    font-size: 2.5rem; /* 少し小さく */
+    margin-top: 1rem;
+}
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 2rem;
+}
+.block-container {
+    padding-top: 1rem;
+}
+/* タブのスタイル */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 24px;
+}
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    background-color: #f0f2f6;
+    border-radius: 4px 4px 0px 0px;
+    gap: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* テキストエリア */
+textarea {
+    background-color: white !important;
+    color: black !important;
+    border: 3px solid #ccc !important;
+    border-radius: 10px;
+}
+/* ボタン共通 */
+div.stButton > button {
+    font-size: 16px;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+}
+/* エンゲージメント計算結果表示用 */
+.result-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+

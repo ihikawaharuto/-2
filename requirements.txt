@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+transformers
+accelerate
+sentencepiece
+ipadic
+annoy
+fugashi
+unidic-lite
