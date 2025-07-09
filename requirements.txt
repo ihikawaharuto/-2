@@ -1,10 +1,14 @@
 streamlit
-pandas
 numpy
+pandas
 transformers
 accelerate
 sentencepiece
-ipadic
-annoy
 fugashi
 unidic-lite
+ipadic
+torch
+torchvision
+torchaudio
+annoy
+
