@@ -22,7 +22,7 @@ class Config:
     SAFE_FILE = "safe.txt"
     OUT_FILE = "out.txt"
     F_DIM = 768
-    VIDEO_PATH = "fire2.mp4"
+    VIDEO_PATH = "fire.webm"
     CSS_PATH = "style.css"
 # --- 動画再生用関数 ---
 @st.cache_data
@@ -34,13 +34,13 @@ def get_video_base64(video_path):
     with open(video_path, "rb") as file:
         return base64.b64encode(file.read()).decode()
 
-def get_video_html(video_path="fire2.mp4", width=150):
+def get_video_html(video_path=Config.VIDEO_PATH, width=150):
     """動画を再生するためのHTML文字列を生成する"""
     video_base64 = get_video_base64(video_path)
     if video_base64:
         return f"""
-            <video autoplay muted loop width="{width}" style="border-radius: 10px; margin-top: 20px; mix-blend-mode: add;">            
-                <source src="data:video/mp4;base64,{video_base64}" type="video/mp4">
+            <video autoplay muted loop width="{width}" style="border-radius: 10px; margin-top: 20px; background-color: transparent;">
+                <source src="data:video/webm;base64,{video_base64}" type="video/webm">
             </video>"""
     return ""
 
